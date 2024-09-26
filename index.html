@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -45,13 +46,14 @@
 
 
         .blockLink {
+            box-sizing: border-box;
             margin: auto;
             height: 100%;
             width: 100%;
             text-align: center;
             overflow: hidden;
             align-content: center;
-            padding: 0px;
+            padding: 5px;
         }
 
 
@@ -99,42 +101,48 @@
 
         .block2 {
             display: block;
-            max-width: 450px;
+            box-sizing: border-box;
             min-width: 300px;
-            overflow-x: scroll;
+            padding:10px;
+            overflow: visible;
         }
-        .card2 {
+        .card2 .container {
+            box-sizing: border-box;
             display: flex;
             flex-flow: row wrap;
             flex-direction: row;
             align-content: center;
             flex-wrap: nowrap;
-            justify-content: space-between;
+            justify-content:space-between;
             gap: 20px 10px;
             max-width: 450px;
             min-width: 300px;
             margin: auto;
             background-color: rgb(33, 36, 37);
+            padding: 0px;
+            overflow: scroll;
         }
-        .card2 div {
+        .linkBlock {
+            box-sizing: border-box;
             margin: 0px;
             padding: 0px;
-            max-width:125px;
-            min-width: 125px;
+            width:140px;
+            min-width: 140px;
             height:150px;
             border-radius: 10px;
             border: 1px solid rgb(67, 67, 67);
-            margin: auto;
             overflow: hidden;
+            margin:0px;
         }
-        .card2 div img {
+        .linkBlock img {
             display: block;
             width: 100%;
             height: 100px;
             object-fit:cover;
             overflow: hidden;
         }
-        .card2 div p {
+        .linkBlock p {
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -154,7 +162,7 @@
 <title>Jason Arsenault - Home</title>
 <body>
 <div class="block1">
-    <img class="profilePic" src="images/dA9vDeBvWdx5HjSyPqJsHd.jpg" />
+    <img class="profilePic" src="images/dA9vDeBvWdx5HjSyPqJsHd.jpg" alt="Profile picture, man with beard and sunglasses" />
     <h1>Jason Arsenault</h1>
     <p>Pastor in Newberg, Oregon</p>
     <div class="social">
@@ -165,26 +173,28 @@
 
 <div class="block1 card1">
     <div>
-        <a href="https://www.rootedandbuiltup.com/p/rest"><img src="images/PdPHUN493qBWBshAe4KCLK.jpg" /></a>
+        <a href="https://www.rootedandbuiltup.com/p/rest"><img src="images/PdPHUN493qBWBshAe4KCLK.jpg" alt="Artistic line drawing of father lion cuddling baby cub" /></a>
         <p><a class="blockLink" href="https://www.rootedandbuiltup.com/p/rest">Rest || Rooted and Built Up</a></p>
     </div>
 </div>
 
 <div class="block2 card2">
-    <div>
-        <a href="https://rootedandbuiltup.com"><img src="images/hV2wGT2dHVsfpsM5DPpYWP.jpg" /></a>
+    <div class="container">
+    <div class="linkBlock">
+        <a href="https://rootedandbuiltup.com"><img src="images/hV2wGT2dHVsfpsM5DPpYWP.jpg" alt="Artistic line drawing representing leaves of a plant with roots" /></a>
         <p><a class="blockLink" href="https://rootedandbuiltup.com">Rooted and Built Up</a></p>
     </div>
 
-    <div>
-        <a href="https://www.teepublic.com/user/jasondoodles"><img src="images/bkjgnYVat6nxcPthUdwD8a.jpg"></a>
+    <div class="linkBlock">
+        <a href="https://www.teepublic.com/user/jasondoodles"><img src="images/bkjgnYVat6nxcPthUdwD8a.jpg" alt="Line drawing of a cute otter waving" /></a>
         <p><a class="blockLink" href="https://www.teepublic.com/user/jasondoodles">Teepublic Shop</a></p>
     </div>
 
-    <div>
-        <a href="https://jasonsdoodles.com/links/"><img src="images/Sharing-1.jpg" /></a>
+    <div class="linkBlock">
+        <a href="https://jasonsdoodles.com/links/"><img src="images/Sharing-1.jpg" alt="Color drawing of a man listening to a child talk about her favorite book" /></a>
         <p><a class="blockLink" href="https://jasonsdoodles.com/links/">Art by Jason Arsenault</a></p>
 
+    </div>
     </div>
 </div>
 
