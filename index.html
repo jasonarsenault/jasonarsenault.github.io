@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="icon" type="image/x-icon" href="https://jaarsenault.wordpress.com/wp-content/uploads/2024/09/jaico-32-32-1.png">
+        <link rel="icon" type="image/x-icon" href="images/jaico-32-32.png">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
 <style>
+        body, a {
+            font-family: "Lora", serif;
+            color: rgb(229, 229, 222);
+            background-color:rgb(33, 36, 37);
+            font-size:small;
+        }
+        p, a {
+            font-family: "Proza Libre", sans-serif;
+        }
+
+            
+
+
+        .profilePic {
+            width:100px;
+            display: block;
+            margin: auto;
+            border-radius: 100%;
+        }
+
+
+
+        .blockLink {
+            
+            margin: auto;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            align-content: center;
+            padding: 0px;
+        }
+
+
         .block1, .block2 {
             border: 0px solid  black;
             padding:1em;
@@ -22,17 +56,37 @@
         .card1 div {
             max-width:450px;
             min-width: 300px;
+            height: ;
             border-radius: 10px;
             margin: auto;
             background-color: rgb(33, 36, 37);
             overflow: hidden;
+            padding: 0px;
         }
         .card1 div img {
             display: block;
             object-fit:cover;
-            max-width: inherit;
-            height:360px;
+            width: 100%;
+            height:300px;
+            z-index: 0;
         }
+        .card1 div p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch;
+            height: 50px;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+            width: 100%;
+            z-index: 1;
+        }
+
+
+
+
         .block2 {
             display: block;
             max-width: 450px;
@@ -54,8 +108,10 @@
         }
         .card2 div {
             margin: 0px;
+            padding: 0px;
             max-width:125px;
             min-width: 125px;
+            height:150px;
             border-radius: 10px;
             border: 1px solid rgb(67, 67, 67);
             margin: auto;
@@ -63,64 +119,57 @@
         }
         .card2 div img {
             display: block;
-            width:125px;
+            width: 100%;
             height: 100px;
             object-fit:cover;
             overflow: hidden;
         }
         .card2 div p {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            align-content: stretch;
+            height: 50px;
             text-align: center;
+            padding: 0px;
+            margin: 0px;
         }
-        .profilePic {
-            width:100px;
-            display: block;
-            margin: auto;
-            border-radius: 100%;
-        }
-        body, a {
-            font-family: "Lora", serif;
-            color: rgb(229, 229, 222);
-            background-color:rgb(33, 36, 37);
-            font-size:small;
-        }
-        p, a {
-            font-family: "Proza Libre", sans-serif;
-        }
-        h1 {
-        }
+
+
+
+
     </style>
 </head>
 <title>Jason Arsenault - Home</title>
 <body>
 <div class="block1">
-    <img class="profilePic" src="https://media.bio.site/sites/ef9701e8-db09-4188-9cdf-64ce7c8cb28d/dA9vDeBvWdx5HjSyPqJsHd.jpg" />
+    <img class="profilePic" src="images/dA9vDeBvWdx5HjSyPqJsHd.jpg" />
     <h1>Jason Arsenault</h1>
     <p>Pastor in Newberg, Oregon</p>
 </div>
 
 <div class="block1 card1">
     <div>
-        <a href="https://www.rootedandbuiltup.com/p/rest"><img src="https://media.bio.site/sites/ef9701e8-db09-4188-9cdf-64ce7c8cb28d/PdPHUN493qBWBshAe4KCLK.jpg" /></a>
-        <p><a href="https://www.rootedandbuiltup.com/p/rest">Rest || Rooted and Built Up</a></p>
+        <a href="https://www.rootedandbuiltup.com/p/rest"><img src="images/PdPHUN493qBWBshAe4KCLK.jpg" /></a>
+        <p><a class="blockLink" href="https://www.rootedandbuiltup.com/p/rest">Rest || Rooted and Built Up</a></p>
     </div>
 </div>
 
 <div class="block2 card2">
     <div>
-        <a href="https://rootedandbuiltup.com"><img src="https://media.bio.site/sites/ef9701e8-db09-4188-9cdf-64ce7c8cb28d/hV2wGT2dHVsfpsM5DPpYWP.jpg" /></a>
-        <p><a href="https://rootedandbuiltup.com">Rooted and Built Up</a></p>
-
+        <a href="https://rootedandbuiltup.com"><img src="images/hV2wGT2dHVsfpsM5DPpYWP.jpg" /></a>
+        <p><a class="blockLink" href="https://rootedandbuiltup.com">Rooted and Built Up</a></p>
     </div>
 
     <div>
-        <a href="https://www.teepublic.com/user/jasondoodles"><img src="https://media.bio.site/sites/ef9701e8-db09-4188-9cdf-64ce7c8cb28d/bkjgnYVat6nxcPthUdwD8a.jpg"></a>
-        <p><a href="https://www.teepublic.com/user/jasondoodles">Teeshirts & Merch by Jason's Doodles</a></p>
+        <a href="https://www.teepublic.com/user/jasondoodles"><img src="images/bkjgnYVat6nxcPthUdwD8a.jpg"></a>
+        <p><a class="blockLink" href="https://www.teepublic.com/user/jasondoodles">Teepublic Shop</a></p>
     </div>
 
     <div>
-        <a href="https://jasonsdoodles.com/links/"><img src="https://jasonsdoodles.com/wp-content/uploads/2022/12/Sharing-1.jpg" /></a>
-        <p><a href="https://jasonsdoodles.com/links/">Art by Jason Arsenault</a></p>
+        <a href="https://jasonsdoodles.com/links/"><img src="images/Sharing-1.jpg" /></a>
+        <p><a class="blockLink" href="https://jasonsdoodles.com/links/">Art by Jason Arsenault</a></p>
 
     </div>
 </div>
