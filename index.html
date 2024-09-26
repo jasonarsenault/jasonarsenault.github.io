@@ -18,10 +18,9 @@
         .card1 {
             background-color: rgb(99, 99, 99);
         }
-        .card2 {
-        }
         .card1 div {
             max-width:450px;
+            min-width: 300px;
             border-radius: 10px;
             margin: auto;
             background-color: rgb(33, 36, 37);
@@ -31,21 +30,31 @@
             display: block;
             object-fit:cover;
             max-width: inherit;
+            height:360px;
+        }
+        .block2 {
+            display: block;
+            max-width: 450px;
+            min-width: 360px;
+            overflow-x: scroll;
         }
         .card2 {
             display: flex;
             flex-flow: row wrap;
             flex-direction: row;
             align-content: center;
+            flex-wrap: nowrap;
             justify-content: space-between;
             gap: 20px 10px;
             max-width: 450px;
+            min-width: 360px;
             margin: auto;
             background-color: rgb(33, 36, 37);
         }
         .card2 div {
             margin: 0px;
             max-width:125px;
+            min-width: 125px;
             border-radius: 10px;
             border: 1px solid rgb(67, 67, 67);
             margin: auto;
@@ -91,7 +100,7 @@
 
 <div class="block1 card1">
     <div>
-        <img src="https://media.bio.site/sites/ef9701e8-db09-4188-9cdf-64ce7c8cb28d/PdPHUN493qBWBshAe4KCLK.jpg" />
+        <a href="https://www.rootedandbuiltup.com/p/rest"><img src="https://media.bio.site/sites/ef9701e8-db09-4188-9cdf-64ce7c8cb28d/PdPHUN493qBWBshAe4KCLK.jpg" /></a>
         <p><a href="https://www.rootedandbuiltup.com/p/rest">Rest || Rooted and Built Up</a></p>
     </div>
 </div>
