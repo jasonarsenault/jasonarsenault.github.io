@@ -11,11 +11,28 @@
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-<style>
+    <style>
+
+
+        :root {
+
+            --primaryColor: rgb(33, 36, 37);
+            --secondaryColor: rgb(229, 229, 222);
+            --tertiaryColor:  rgb(99, 99, 99);
+            --accentColor: rgb(67, 67, 67);
+            --slimPageMaxWidth: 450px;
+            --slimPageMinWidth: 300px;
+            --standardBorderRadius: 10px;
+
+        }
+
+
+
+
         body, a {
             font-family: "Lora", serif;
-            color: rgb(229, 229, 222);
-            background-color:rgb(33, 36, 37);
+            color: var(--secondaryColor);
+            background-color:var(--primaryColor);
             font-size:small;
         }
         body {
@@ -59,21 +76,20 @@
 
 
 
-        .block1, .block2 {
-            border: 0px solid  black;
+        .block1 {
             padding:1em;
             text-align: center;
             box-sizing: border-box;
         }
         .card1 {
-            background-color: rgb(99, 99, 99);
+            background-color:var(--tertiaryColor);
         }
         .card1 div {
-            max-width:450px;
-            min-width: 300px;
-            border-radius: 10px;
+            max-width:var(--slimPageMaxWidth);
+            min-width: var(--slimPageMinWidth);
+            border-radius: var(--standardBorderRadius);
             margin: auto;
-            background-color: rgb(33, 36, 37);
+            background-color: var(--primaryColor);
             overflow: hidden;
             padding: 0px;
         }
@@ -111,10 +127,10 @@
             flex-wrap: nowrap;
             justify-content:space-between;
             gap: 20px 10px;
-            max-width: 450px;
-            min-width: 300px;
+            max-width: var(--slimPageMaxWidth);
+            min-width: var(--slimPageMinWidth);
             margin: auto;
-            background-color: rgb(33, 36, 37);
+            background-color: var(--primaryColor);
             padding: 0px;
             overflow: scroll;
         }
@@ -125,8 +141,8 @@
             width:140px;
             min-width: 140px;
             height:150px;
-            border-radius: 10px;
-            border: 1px solid rgb(67, 67, 67);
+            border-radius: var(--standardBorderRadius);
+            border: 1px solid var(--accentColor);
             overflow: hidden;
             margin:0px;
         }
@@ -153,12 +169,12 @@
 
 
         .card3 div#one {
-            max-width:450px;
-            min-width: 300px;
+            max-width:var(--slimPageMaxWidth);
+            min-width: var(--slimPageMinWidth);
             height:320px;
-            border-radius: 10px;
+            border-radius: var(--standardBorderRadius);
             margin: auto;
-            background-color: rgb(33, 36, 37);
+            background-color: var(--primaryColor);
             overflow: hidden;
             padding: 0px;
         }
@@ -170,17 +186,25 @@
         }
 
         #contact .container {
-            max-width: 450px;
-            min-width: 300px;
+            max-width: var(--slimPageMaxWidth);
+            min-width: var(--slimPageMinWidth);
             margin:auto;
         }
 
+        
+        .spacer {
+            width:100%;
+            height:50px;
+        }
 
 
     </style>
 </head>
 <title>Jason Arsenault - Home</title>
 <body>
+
+
+
 <section class="block1">
     <img class="profilePic" src="images/dA9vDeBvWdx5HjSyPqJsHd.jpg" alt="Profile picture, man with beard and sunglasses" />
     <h1>Jason Arsenault</h1>
@@ -222,6 +246,8 @@
 
 
 
+
+
 <section class="block1 card1">
     <div>
         <a href="https://www.rootedandbuiltup.com/p/rest"><img src="images/PdPHUN493qBWBshAe4KCLK.jpg" alt="Artistic line drawing of father lion cuddling baby cub" /></a>
@@ -252,6 +278,9 @@
     </div>
     </div>
 </section>
+
+
+
 
 
 <section class="block1 card3">
